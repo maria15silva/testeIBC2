@@ -1,0 +1,171 @@
+/* Reset de estilos e variáveis */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Century Gothic;
+    transition: all .5s;
+}
+
+:root {
+    --cor1: #31e981;
+    --cor2: #FFF;
+    --cor3: #07BEB8;
+    --cor4: #35605a;
+    --cor5: #00120b;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de barras de rolagem */
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: var(--cor3);
+    border-radius: 500px;
+}
+
+/* Estilo de seleção de texto */
+::selection{
+    background-color: var(--cor5);
+    padding: 10px;
+}
+
+/* Estilo para elementos "span" */
+span{
+    color: #000000;
+}
+
+/* Estilo para a classe "termo" */
+.termo {
+    color: var(--cor4);
+    height: 40%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Estilo para elementos "img" */
+img{
+    width: 200px;
+}
+
+/* Estilo para o título "h1" */
+h1{
+    font-size: 50pt;
+    font-weight: bold;
+}
+
+/* Estilo para a seção "section" */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(-90deg, var(--cor2), var(--cor3), var(--cor2));
+    background-size: 400% 400%;
+    animation: Gradient 10s ease infinite;
+}
+
+/* Estilo para elementos com classe "flex" */
+.flex {
+    display: flex;
+    width: 700px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo para elementos com classe "flexd" */
+.flexd {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 30px;
+    font-size: 25px;
+}
+
+/* Estilo para elementos com classe "class" */
+.class {
+    font-weight: bold;
+}
+
+/* Estilo para elementos com classe "flexc" */
+.flexc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25%;
+}
+
+/* Estilo para elementos com classe "login" */
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 800px;
+    padding: 50px;
+    background-color: none;
+    color: #000000;
+    border-radius: 5%;
+    justify-content: space-around;
+}
+
+/* Estilo para elementos "a" dentro da classe "login" */
+.login a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+/* Estilo para elementos com classe "item" */
+.item {
+    width: 700px;
+    border-radius: 100px;
+    padding: 8px;
+    border: none;
+}
+
+/* Estilo para elementos com classe "btn" */
+.btn{
+    border-radius: 100px;
+    padding: 10px;
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--cor3);
+    font-weight: 900;
+    cursor: pointer;
+    
+}
+
+.btn:hover{
+    background-color: #FFF;
+    transition: 0.5s;
+    opacity: 0.7;
+}
+
+/* Estilo para elementos com classe "checkbox" */
+.checkbox {
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 10px;
+    height: 10px;
+}
+
+/* Animação de gradiente */
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+

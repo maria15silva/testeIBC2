@@ -1,0 +1,154 @@
+:root {
+  --cor1: #31e981;
+  --cor2: #3464ac;
+  --cor3: #07BEB8;
+  --cor4: #35605a;
+  --cor5: #00120b;
+}
+
+body {
+background: linear-gradient(270deg, var(--cor1), var(--cor2), var(--cor3));
+background-size: 600% 600%;
+animation: AnimationName 30s ease infinite;
+}
+
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Your existing styles */
+input[type=radio] {
+  margin-right: 10px;
+  
+}
+
+label {
+  font-weight: bold; 
+  display: inline-block; 
+  margin-bottom: 10px; 
+}
+
+form {
+  background-color: #e1fefffd; 
+  padding: 20px; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  border: #ccc; 
+  border-radius: 5px; 
+  justify-content: center;
+}
+
+#caixa {
+  justify-content: space-around;
+  background-color: #d4f6f8; 
+  padding: 10px; 
+  max-width: 600px; 
+  margin: 20px auto; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+}
+
+
+input[type=button]:hover {
+  background-color: rgb(77, 77, 77);
+}
+
+/* Estilos gerais */
+* {
+  box-sizing: border-box;
+  font-family: Century Gothic;
+  transition: all .5s;
+}
+
+input[type=button] {
+  background-color: #000000; 
+  color: white; 
+  border: none; 
+  padding: 10px 20px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  margin-top: 10px; 
+  cursor: pointer; 
+  border-radius: 5px; 
+}
+
+input[type=submit]:hover {
+  background-color: rgb(77, 77, 77); 
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #999;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+}
+
+input[type="radio"]:checked {
+  border-color: #1abc9c;
+}
+
+input[type="radio"]:checked::before {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%;
+  background-color: #1abc9c;
+}
+
+
+#btn{
+  display: block;
+  width: 450px;
+  height: 70px;
+  line-height: 40px;
+  font-size: 25px;
+  font-family:Century Gothic;
+  text-decoration: #164A3F;
+  color: #164A3F;
+  border: #58e9c5;
+  letter-spacing: 1px;
+  text-align: center;
+  position: relative;
+  transition: all .35s;
+  background-color: #51e0bd;
+  border-radius: 17px;
+}
+
+
+#btn span{
+  position: relative;
+  z-index: 2;
+}
+
+#btn:after{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #164A3F;
+  transition: all .25s;
+  border-radius: 15px;
+}
+
+#btn:hover{
+  color: #4dbfd3;
+  background-color: #15697e;
+}
+
+#btn:hover:after{
+  width: 100%;
+}
